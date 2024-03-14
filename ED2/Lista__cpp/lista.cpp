@@ -18,12 +18,22 @@ Lista::Lista(){
     this->tamanho = 0;
 }
 
+Lista::~Lista(){
+    cout<<"Destrutor chamado\n";
+    No* aux = this->primeiro;
+    while(aux != nullptr){
+        No* del = aux;
+        aux = aux->proximo;
+        delete del;
+    }
+}
+
 void Lista::inserir(int dado){
     No* novo;
     novo = new No(dado);
     if(this->vazia()){///caso 1: Lista vazia, insere no primiro elemento
         this->primeiro = novo;   
-    }else{//Caso 2: Lista contrem um ou mais elementos
+    }else{//Caso 2: Lista contem um ou mais elementos
         this->ultimo->proximo = novo;
     }
     //atualiza a ultima posição
