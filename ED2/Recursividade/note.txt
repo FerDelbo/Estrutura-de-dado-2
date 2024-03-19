@@ -1,6 +1,6 @@
 Recursividade 
 É quando a definição de uma função 
-é dada a partit dela mesma
+é dada a partir dela mesma
 
 (fatoria) n! = n(n-1)!  <--- Caso recursivo
 
