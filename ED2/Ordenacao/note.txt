@@ -1,0 +1,14 @@
+                      ordenação 
+V = [3, 0, 4, 2, 5, 1]   -->  [0, 1, 2, 3, 4, 5]
+
+Selection Sort (Oredenação por seleção)
+        3 0 4 2 5 1
+        ^ ^         troca
+        0 3 4 2 5 1
+          ^       ^ troca
+        0 1 4 2 5 3
+            ^ ^     troca
+        0 1 2 4 5 3
+              ^   ^ troca
+        0 1 2 3 5 4
+                ^ ^ troca
